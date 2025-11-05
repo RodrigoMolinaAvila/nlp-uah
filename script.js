@@ -2,7 +2,7 @@
 const CARDS = [
   {
     "id": "tf-idf",
-    "title": "TF–IDF",
+    "title": "TF–IDF (Term Frequency–Inverse Document Frequency)",
     "definition": "Pondera términos por frecuencia en el documento y rareza en el corpus; base vectorial para similitud y recuperación de información.",
     "formula": "\\text{TF-IDF}(t,d,D) = \\text{tf}(t,d) \\times \\log\\left( \\frac{N}{\\text{df}(t)} \\right)",
     "interpretation": "El peso del término t en el documento d crece con su frecuencia local y decrece con su frecuencia global en el corpus D.",
@@ -32,7 +32,7 @@ const CARDS = [
     "title": "spaCy (`es_core_news_lg`)",
     "definition": "Pipeline industrial para español con tokenización, lematización, NER y dependencias; base para preprocesamiento estructural.",
     "formula": "x = f(\\text{tokenización},\\,\\text{lemmatización},\\,\\text{vectorización})",
-    "interpretation": "No tiene una fórmula cerrada: combina reglas lingüísticas y embeddings estadísticos para obtener representaciones estructuradas del texto.",
+    "interpretation": "Una función que combina reglas lingüísticas y embeddings estadísticos para obtener representaciones estructuradas del texto.",
     "repo_links": [
       "https://github.com/RodrigoMolinaAvila/minicoesfondap-1523A0005/blob/main/Analysis/02_eda_pivotes.ipynb",
       "https://github.com/RodrigoMolinaAvila/minicoesfondap-1523A0005/blob/main/Analysis/03_derechos_reproductivos.ipynb"
