@@ -1,0 +1,86 @@
+/* Shared styles */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 400ms ease-out, transform 400ms ease-out;
+}
+
+.card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.progress-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fed7aa;
+    transition: background-color 300ms, transform 300ms;
+    cursor: pointer;
+}
+
+.progress-dot.active {
+    background-color: #ea580c;
+    transform: scale(1.2);
+}
+
+.repo-link {
+    transition: all 200ms ease;
+}
+
+.repo-link:hover {
+    transform: translateX(4px);
+}
+
+.tag {
+    transition: all 200ms ease;
+}
+
+.tag:hover {
+    background-color: #fed7aa;
+    transform: scale(1.05);
+}
+
+.math-display {
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    border-left: 4px solid #ea580c;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+}
+
+/* Touch feedback */
+@media (hover: none) {
+    button:active {
+        transform: scale(0.95);
+    }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fef3c7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fb923c;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ea580c;
+}

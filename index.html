@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolución de Análisis NLP</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-white text-stone-900 overflow-hidden">
+    <div id="app" class="flex flex-col h-screen">
+        <!-- Progress Indicators -->
+        <div id="progress-container" class="flex justify-center gap-2 p-4"></div>
+        
+        <!-- Main Card Container -->
+        <div class="flex-1 flex items-center justify-center px-4">
+            <div id="card-container" class="max-w-3xl w-full"></div>
+        </div>
+        
+        <!-- Controls -->
+        <div class="flex justify-center items-center gap-4 p-6">
+            <button id="prev-btn" class="rounded-xl px-4 py-2 border border-orange-300 bg-orange-100 hover:bg-orange-200 focus:ring-2 focus:ring-orange-400 transition-all">
+                <i data-feather="chevron-left" class="inline w-4 h-4"></i>
+                Anterior
+            </button>
+            <span id="counter" class="text-sm text-orange-800 font-medium"></span>
+            <button id="next-btn" class="rounded-xl px-4 py-2 border border-orange-300 bg-orange-100 hover:bg-orange-200 focus:ring-2 focus:ring-orange-400 transition-all">
+                Siguiente
+                <i data-feather="chevron-right" class="inline w-4 h-4"></i>
+            </button>
+            <button id="play-btn" class="rounded-xl px-4 py-2 border border-orange-300 bg-orange-100 hover:bg-orange-200 focus:ring-2 focus:ring-orange-400 transition-all">
+                <i data-feather="play" class="inline w-4 h-4"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
